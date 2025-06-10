@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+albionrooftop.com.au	TRUE	/	FALSE	1999999999	crumb	BXxu1zrywPKINzM5NzA2OTk0MTc0OTA2ZDdlZDY1ODM3ZjJhMzQy
+
